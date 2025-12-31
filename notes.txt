@@ -1,0 +1,33 @@
+//DOM
+
+What is DOM?
+The dom is a tree-like structure created by the browser from your html.
+
+                          html
+                       /       \ 
+                      /         \
+                     /           \
+                    HEAD          body
+                  /   |  \         |  \
+                meta link title    p  div
+                                  /      \
+                                strong    img
+                                  |
+                                  hello
+
+It allows javascript to read, modify, add, delete, changes to HTML & CSS.
+HTML = structure
+CSS = style
+DOM = bridge between HTML & javascript
+// Which adds functionality to your website
+
+// DOM is an Application Programming Interface(API) for manipulating HTML documents
+// When a web page gets loads the browser creates a dom tree structure for it which is also known as DOM tree
+
+// In DOM tree, the document is an root node of it.
+
+// Open your browser and open console of it using F12 or inspect
+
+//DOM Methods
+
+1. getElementById()
