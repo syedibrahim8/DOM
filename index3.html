@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <label>
+            Email:
+        </label>
+        <input type="email">
+        <br>
+        <label>
+            Password:
+        </label>
+        <input type="password">
+        <br><br>
+        <button type="submit">login</button>
+    </form>
+    <script>
+        let form = document.getElementById("form")
+        form.addEventListener("submit",(a)=>{
+            a.preventDefault();
+            console.log("hello");
+            console.log(a);
+        })
+    </script>
+</body>
+</html>
