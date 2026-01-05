@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex h-screen items-center justify-center font-Arial bg-pink-300">
+    <form id="form" class="bg-[#fff] p-[25px] w-[300px] rounded-[8px] shadow-lg">
+        <h1 class="text-center mb-[20px] text-2xl font-bold">Login Form</h1>
+        <label>
+            Email:
+        </label>
+        <input class="border rounded-[3px] w-full p-[5px] mb-[12px]" type="email" id="email" placeholder="Enter your email">
+        <br>
+        <label>
+            Password:
+        </label>
+        <input type="password" class="border rounded-[3px] w-full p-[5px] mb-[12px]" id="password" class="border rounded-[3px]" placeholder="Enter your password">
+        <br><br>
+        <button type="submit" class="border rounded-[4px] bg-[#007bff] shadow-lg text-white w-full p-[5px] mb-[12px]">login</button>
+    </form>
+
+    <script>
+        let form = document.getElementById("form");
+        form.addEventListener("submit",(event)=>{
+            event.preventDefault();
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+            let userObject = {
+                email,
+                password
+            };
+            console.log(userObject);
+        })
+    </script>
+</body>
+</html>

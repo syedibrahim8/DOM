@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registeration</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body class="flex h-screen justify-center items-center">
+    <form action="https://www.google.com" target="_blank" id="register" class="flex-column bg-[#fff] w-[400px] p-[25px] rounded-[8px] shadow-lg">
+        <h1 class="text-center mb-[20px] text-2xl font-bold">Registeration Form</h1>
+        <label for="">
+            Full Name:
+        </label>
+        <input type="text" class="border rounded-[8px] w-full p-[5px] mb-[12px]" placeholder="Enter your full name" id="fullName" required="required">
+        <label for="">
+            Email:
+        </label>
+        <input type="email" class="border rounded-[8px] w-full p-[5px] mb-[12px]" placeholder="Enter your email" id="email" required="required">
+        <label for="">
+            Password:
+        </label>
+        <input type="password" class="border rounded-[8px] w-full p-[5px] mb-[12px]" placeholder="Enter your password" required="required" id="password">
+        <label for="">
+            Gender:
+        </label>
+        <select name="" id="gender" class="border rounded-[8px] w-full p-[5px] mb-[12px]" required="required">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br><br>
+        <button type="submit" class="border rounded-[8px] bg-[#007bff] text-white  w-full p-[5px] mb-[12px]">Register</button>
+    </form>
+    <script>
+        let form = document.getElementById("register")
+        form.addEventListener("submit",(event)=>{
+            event.preventDefault();
+            let payload={
+                fullName:fullName.value,
+                email:email.value,
+                password:password.value,
+                gender:gender.value
+            };
+            console.log(payload);
+            window.location="https://google.com"
+            //     let data = await axios("")
+            // } catch (error) {
+                
+            // }
+        })
+    </script>
+</body>
+</html>
