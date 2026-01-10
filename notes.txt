@@ -28,6 +28,6 @@ DOM = bridge between HTML & javascript
 
 // Open your browser and open console of it using F12 or inspect
 
-//DOM Methods
+// DOM Methods
 
 1. getElementById()
